@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import GitLogin from "../components/git-btn";
+import GoogleBtn from "../components/google-btn";
 
 
 export default function CreateAccount(){
@@ -82,6 +83,7 @@ export default function CreateAccount(){
       Don't you have a account??<Link to="/login">Log in</Link>
     </Switcher>
     <GitLogin/>
+    <GoogleBtn/>
         </Wrapper>
         </>
     )
