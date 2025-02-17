@@ -1,11 +1,11 @@
 
 import React, { useState } from "react";
-
 import { auth } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { Error, Form, Input, Switcher, Title, Wrapper, } from "../components/auth-components";
+import { Error, Form, Input, Switcher, Title, Wrapper } from "../components/auth-components";
+import GithubButton from "../components/git-btn";
 
 
 export default function CreateAccount(){
@@ -72,7 +72,8 @@ export default function CreateAccount(){
     <Switcher>
         Don't you have a account??<Link to="/create-account">Sing In</Link>
     </Switcher>
-        </Wrapper>
+    <GithubButton/>
+    </Wrapper>
         </>
     )
 }

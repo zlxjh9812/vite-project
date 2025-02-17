@@ -5,6 +5,7 @@ import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
+import GitLogin from "../components/git-btn";
 
 
 export default function CreateAccount(){
@@ -80,6 +81,7 @@ export default function CreateAccount(){
     <Switcher>
       Don't you have a account??<Link to="/login">Log in</Link>
     </Switcher>
+    <GitLogin/>
         </Wrapper>
         </>
     )
